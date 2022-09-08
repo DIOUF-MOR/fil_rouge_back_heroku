@@ -1,0 +1,11 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+    # prefix: /{_locale}
+    # requirements:
+    #     _locale: fr|en|
+api_login_check:
+    path: /api/login_check
+
+
+   

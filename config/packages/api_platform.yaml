@@ -1,0 +1,19 @@
+api_platform:
+    defaults:
+            pagination_enabled : false
+    eager_loading:
+        max_joins: 100
+        fetch_partial: true
+        force_eager: false
+    formats:
+        json: ["application/json"]  
+        jsonld: [ 'application/json+ld' ]
+        html: [ 'text/html' ]
+        multipart: [ 'multipart/form-data' ]  
+    mapping:
+        paths: ['%kernel.project_dir%/src/Entity']
+    patch_formats:
+        json: ['application/merge-patch+json']
+    swagger:
+        versions: [3]
+                
